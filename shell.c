@@ -43,6 +43,15 @@ int main () {
 
     args[i] = NULL;
 
+    if(strcmp(args[0], "cd") == 0){
+      if(args[1] == NULL) {
+        perror("cd is missing args");
+      } else if (chdir(args[1]) != 0 ) {
+        perror("cd failed args[1] == 0");
+      }
+      continue;
+    }
+
     pid_t pid = fork();
 
     if (pid == 0) {
