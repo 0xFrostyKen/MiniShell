@@ -10,13 +10,13 @@
 int main () {
   
   printf("\n###########################################");
-  printf("\n########### BUBU (.)(.) BUBU ##############");
+  printf("\n###########################################");
   printf("\n###########################################\n");
   char input[MAX_INPUT];
   char* args[MAX_ARGS];
 
   while (1) {
-    printf("(.)(.) >");
+    printf(">");
     fflush(stdout);
 
     if(fgets(input, MAX_INPUT, stdin) == NULL) {
@@ -29,7 +29,7 @@ int main () {
   
 
     if(strcmp(input, "exit") == 0){
-      printf("Thank you for using bubu shell all hail bubu (.)(.)");
+      printf("Thank you for using");
       break;
     }
 
